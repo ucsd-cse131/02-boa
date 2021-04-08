@@ -11,11 +11,12 @@ instructions.
 
 ## Download 
 
-1. Use the _fork link_ from the class website to create your private clone of the starter code.
+1. Use the _link_ from the github classroom to create your private clone of the starter code.
 
-2. Do `git clone https://github.com/ucsd-cse131-fa18/00-warmup-XXX` where `XXX` is your private repo.
+2. Do `git clone https://github.com/ucsd-cse131/ucsd-cse131-sp21-02-boa-XYZ` where `XYZ` is your username.
 
 3. Link your clone to the "upstream" to get any updates
+
 
 ```
 $ make upstream
@@ -30,8 +31,7 @@ $ make update
 4. Save (and submit) your work with: 
 
 ```
-$ git commit -a -m MESSAGE
-$ git push
+$ make turnin 
 ```
 
 ## The Boa Language
