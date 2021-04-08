@@ -1,0 +1,4 @@
+stack exec --allow-different-user -- boa tests/input/forty_one.boa > tests/output/forty_one.s
+nasm -f macho64 -o tests/output/forty_one.o tests/output/forty_one.s
+clang  -g -m64 -o tests/output/forty_one.run c-bits/main.c tests/output/forty_one.o
+tests/output/forty_one.run > tests/output/forty_one.result
