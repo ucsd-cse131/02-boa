@@ -1,4 +1,0 @@
-stack exec --allow-different-user -- boa tests/input/five.boa > tests/output/five.s
-nasm -f macho64 -o tests/output/five.o tests/output/five.s
-clang  -g -m64 -o tests/output/five.run c-bits/main.c tests/output/five.o
-tests/output/five.run > tests/output/five.result

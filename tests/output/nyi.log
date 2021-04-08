@@ -1,5 +1,0 @@
-stack exec --allow-different-user -- boa tests/input/nyi.boa > tests/output/nyi.s
-boa: fill this in
-CallStack (from HasCallStack):
-  error, called at lib/Language/Boa/Normalizer.hs:31:27 in boa-0.1.0.0-8aRumtkItH4HrCk5wxMKO2:Language.Boa.Normalizer
-make[1]: *** [tests/output/nyi.s] Error 1

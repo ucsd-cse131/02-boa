@@ -1,5 +1,0 @@
-stack exec --allow-different-user -- boa tests/input/expr2.boa > tests/output/expr2.s
-boa: fill this in
-CallStack (from HasCallStack):
-  error, called at lib/Language/Boa/Normalizer.hs:79:27 in boa-0.1.0.0-8aRumtkItH4HrCk5wxMKO2:Language.Boa.Normalizer
-make[1]: *** [tests/output/expr2.s] Error 1
