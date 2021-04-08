@@ -29,21 +29,6 @@ endif
 endif
 endif
 
-# aliases
-
-INPUTS  := $(patsubst tests/input/%.boa,%,$(wildcard tests/input/*.boa))
-ASMS    := $(patsubst %,%-s,$(INPUTS))
-OBJS    := $(patsubst %,%-o,$(INPUTS))
-RUNS    := $(patsubst %,%-run,$(INPUTS))
-RESULTS := $(patsubst %,%-result,$(INPUTS))
-
-$(ASMS): %-s: tests/output/%.s
-	cat $<
-$(OBJS): %-o: tests/output/%.o
-$(RUNS): %-run: tests/output/%.run
-$(RESULTS): %-result: tests/output/%.result
-	cat $<
-
 .PHONY: test bin build clean distclean turnin \
 	$(ASMS) $(OBJS) $(RUNS) $(RESULTS)
 
@@ -88,3 +73,20 @@ tests/output/%.o: tests/output/%.s
 
 tests/output/%.s: tests/input/%.$(EXT)
 	$(COMPILEREXEC) $< > $@
+
+# aliases
+
+INPUTS  := $(patsubst tests/input/%.boa,%,$(wildcard tests/input/*.boa))
+ASMS    := $(patsubst %,%-s,$(INPUTS))
+OBJS    := $(patsubst %,%-o,$(INPUTS))
+RUNS    := $(patsubst %,%-run,$(INPUTS))
+RESULTS := $(patsubst %,%-result,$(INPUTS))
+
+$(ASMS): %-s: tests/output/%.s
+	cat $<
+$(OBJS): %-o: tests/output/%.o
+$(RUNS): %-run: tests/output/%.run
+$(RESULTS): %-result: tests/output/%.result
+	cat $<
+
+
