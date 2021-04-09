@@ -409,4 +409,5 @@ This will simply do a `git commit` followed by a `git push` to send us your code
 **We will use the _most recent commit_ of your code (on `master` branch) as your submission.**
 
 
-[lh-blog-anf]: http://goto.ucsd.edu/~rjhala/liquid/haskell/blog/blog/2016/09/05/normal-forms.lhs/
+[lh-blog-anf]: https://ucsd-progsys.github.io/liquidhaskell-blog/2016/09/01/normal-forms.lhs/
+
