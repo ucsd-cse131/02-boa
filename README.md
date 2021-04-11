@@ -39,7 +39,7 @@ make test
 
 To submit you must:
 
-1. [Fill this form](https://forms.gle/mW9FcrUHRrAr4uUG9) with your information,
+1. [Fill this form](https://forms.gle/mW9FcrUHRrAr4uUG9) with your information (you need to do this ONCE in the quarter)
 
 2. Add the names of your group members in `COLLABORATORS.md` (leave blank if working individually),
 
