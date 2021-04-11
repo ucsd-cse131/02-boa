@@ -28,11 +28,30 @@ after this you can get "updates" (in case we modify the starter code), with
 $ make update 
 ```
 
-4. Save (and submit) your work with: 
+## Submission Instructions
 
+Make sure that your code works with the provided test cases by running
+the command
+
+``` sh
+make test
 ```
+
+To submit you must:
+
+1. [Fill this form](https://forms.gle/mW9FcrUHRrAr4uUG9) with your information,
+
+2. Add the names of your group members in `COLLABORATORS.md` (leave blank if working individually),
+
+3. `commit` and `push` your code by typing 
+
+```bash
 $ make turnin 
 ```
+
+This will simply do a `git commit` followed by a `git push` to send us your code.
+
+**We will use the _most recent commit_ of your code (on `main` branch) as your submission.**
 
 ## The Boa Language
 
@@ -375,38 +394,6 @@ tackling the implementation:
 6. Work through both the `anf` implementation and
    the compiler implementation of `Let`.  
    Write tests as you go.
-
-## Submission Instructions
-
-First, make sure that your code works with the provided test cases by running
-the command
-
-``` sh
-make test
-```
-
-When you're ready, run the following command to submit your homework:
-
-```sh
-make turnin
-```
-
-Before submitting your code, you have to fill
-[this form](https://goo.gl/forms/3KBuBTilmvMKFD223)
-to register your groups. **You need to fill it in for each assignment**.
-
-We will use this form to match your  github account username to
-your student id, so you **must** fill it even if you have worked
-on the assignment individually.
-
-To submit your code, just do:
-
-```bash
-$ make turnin 
-```
-
-This will simply do a `git commit` followed by a `git push` to send us your code.
-**We will use the _most recent commit_ of your code (on `master` branch) as your submission.**
 
 
 [lh-blog-anf]: https://ucsd-progsys.github.io/liquidhaskell-blog/2016/09/01/normal-forms.lhs/
