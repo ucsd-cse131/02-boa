@@ -74,7 +74,7 @@ imms i (e:es)       = (i'', bs' ++ bs, e' : es' )
 --   * `bs` are the temporary binders needed to render `e` in ANF, and
 --   * `e'` is an `imm` value (Id or Number) equivalent to `e`.
 --------------------------------------------------------------------------------
-imm :: Int -> AnfExpr a -> (Int, Binds a, ImmExpr a)
+imm :: Int -> Expr a -> (Int, Binds a, ImmExpr a)
 --------------------------------------------------------------------------------
 imm i (Number n l)      = error "fill this in"
 
