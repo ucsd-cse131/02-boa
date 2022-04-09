@@ -68,4 +68,4 @@ test-suite test
                     tasty-rerun,
                     text,
                     unordered-containers,
-                    boa 
+                    boa
